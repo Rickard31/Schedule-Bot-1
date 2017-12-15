@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": 290290716,
+      "username": "Vasya",
+      "schedule": [{
+        "time": 10
+      }]
+    },
+    {
+      "id": 389553180,
+      "username": "Rickard31",
+      "schedule": []
+    }
+  ]
+}
