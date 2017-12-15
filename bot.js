@@ -28,7 +28,7 @@ db.once('open', function callback() {
     } ,500);
 });
 var Schema = mongoose.Schema;
-const token = '358469384:AAHYQ-NrDsfR6vbNf19pa1wflp56TIr4N_U';
+const token = '358469384:AAHYQ-NrDsfR6vbNf19pa1wflp56TIr4N_U_';
 var api = new telegram(token,{
     updates: {
         enabled: true,
