@@ -28,7 +28,6 @@ db.once('open', function callback() {
     } ,500);
 });
 var Schema = mongoose.Schema;
-const usersStorageFile = 'users.json';
 const token = '358469384:AAHYQ-NrDsfR6vbNf19pa1wflp56TIr4N_U';
 var api = new telegram(token,{
     updates: {
