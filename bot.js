@@ -490,7 +490,7 @@ function timeIsOkay(notify,date,callback){
     if(moment(now).isAfter(m)){
         return callback(botMessage.step2err_expired, null);
     }
-    else return callback(null,m);
+    else return callback(null,Date(m.valueOf()));
 }
 
 function dateIsOkay(text, callback){
