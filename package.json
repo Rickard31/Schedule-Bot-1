@@ -1,8 +1,8 @@
 {
-  "name": "schedule-telegram-bot",
+  "name": "Schedule-Bot-1",
   "version": "1.0.0",
-  "description": "shedule telegram bot",
-  "main": "bot.js",
+  "description": "Shedule Telegram Bot",
+  "main": "index.js",
   "dependencies": {
     "bluefish": "^0.0.1-security",
     "js-priority-queue": "^0.1.5",
@@ -13,20 +13,23 @@
     "node-telegram-bot-api": "^0.28.0",
     "priorityqueue": "^0.2.0",
     "promise": "^8.0.1",
-    "telegram-bot-api": "^1.2.0"
+    "telegram-bot-api": "^1.2.0",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "export $(cat .env | xargs) && node index.js",
+    "set_env": "export $(cat .env | xargs)",
+    "start_win": "env.cmd && node index.js",
+    "set_env_win": "env.cmd",
+    "switch_to_dev": "export $(cat .env | xargs) && wget --spider https://api.telegram.org/bot$TOKEN/setWebhook?url= --delete-after && node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VassalX/Schedule-Telegram-Bot.git"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/VassalX/Schedule-Telegram-Bot/issues"
-  },
-  "homepage": "https://github.com/VassalX/Schedule-Telegram-Bot#readme"
+  "license": "ISC"
 }

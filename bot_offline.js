@@ -41,15 +41,15 @@ const botMessage = {
     error: emoji.emojify("Oh, no! :sob: An error has occured! Please, try again later... "),
     start: emoji.emojify("Please, enter /remind if you are ready to add new event! :wink:"),
     greet: emoji.emojify(   "I want to help you to make shedules for your events :clock2:\n" +
-        "Moreover I can notify you :love_letter: so you would never miss your mother in law's birthday! ;3"),
+                            "Moreover I can notify you :love_letter: so you would never miss your mother in law's birthday! ;3"),
     enterEvent: emoji.emojify("Okay! Please, enter the name of the event :smile:"),
     step0: emoji.emojify("Are you ready to create event? Please, enter /remind"),
     step1: emoji.emojify("Great! Now enter the date :clock2: in this format YYYY-MM-DD HH:mm"),
     step2err_format: emoji.emojify( "Sorry, I don't understand... try to use one of these formats:\n" +
-        "YYYY-MM-DD LT\n" +
-        "YYYY-MM-DD h:mm A\n" +
-        "YYYY-MM-DD HH:mm\n" +
-        "YYYY-MM-DD HH:mm"),
+                                    "YYYY-MM-DD LT\n" +
+                                    "YYYY-MM-DD h:mm A\n" +
+                                    "YYYY-MM-DD HH:mm\n" +
+                                    "YYYY-MM-DD HH:mm"),
     step2err_expired: emoji.emojify("Hey! The date is expired! Think about the future :clock2:"),
     step2: emoji.emojify("Very nice! Now you can /finish making your event or continue adding some details about it (they are not necessary)"),
     step2next: emoji.emojify("You may enter time before notification in format HH:mm"),
@@ -58,7 +58,7 @@ const botMessage = {
     step3err: emoji.emojify("Oh no! The stated time is incorrect! :confused: Please, try again! "),
     step4: emoji.emojify("Niiice :grinning: \nNow you can /finish making your event"),
     finish: emoji.emojify(  "Well done! Your event has been saved :love_letter: \n" +
-        "I will let you know, when it is about to happen! :grin:"),
+                            "I will let you know, when it is about to happen! :grin:"),
     finish_before: emoji.emojify(   "Your event was not saved... you can create another one! :grin: \n")
 };
 var userSchema = new Schema({
